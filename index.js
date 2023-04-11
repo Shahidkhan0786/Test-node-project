@@ -6,14 +6,14 @@ const PORT = 8000
 app.use(express.json())
 
 app.get('/', (req,res)=>{
-    res.status.json({
+    res.status(200).json({
         status: "okk",
         message:"app is running"
     })
 })
 
 app.get('/home', (req,res)=>{
-    res.status.json({
+    res.status(200).json({
         status: "okk",
         message:"homeee"
     })
